@@ -1,0 +1,60 @@
+﻿@* @page
+@model OpenIddict.Reference.API.Pages.Account.LoginModel
+
+<h2>Login</h2>
+
+<form method="post">
+    @Html.AntiForgeryToken()
+
+    <input asp-for="Input.Email" placeholder="Email" />
+
+    <br /><br />
+
+    <input asp-for="Input.Password"
+           type="password"
+           placeholder="Password" />
+
+    <input asp-for="Input.ReturnUrl" type="hidden" />
+
+    <br /><br />
+
+    <button type="submit">
+        Login
+    </button>
+
+</form>
+
+<div asp-validation-summary="All"></div> *@
+
+
+@page
+@model OpenIddict.Reference.API.Pages.Account.LoginModel
+
+<h2>Login</h2>
+
+<form method="post">
+
+    @Html.AntiForgeryToken()
+
+    <div>
+        <label>Email</label>
+        <input name="Input.Email" />
+    </div>
+
+    <div>
+        <label>Password</label>
+        <input name="Input.Password"
+               type="password" />
+    </div>
+
+    <input type="hidden"
+           name="Input.ReturnUrl"
+           value="@Model.Input.ReturnUrl" />
+
+    <button type="submit">
+        Login
+    </button>
+
+</form>
+
+

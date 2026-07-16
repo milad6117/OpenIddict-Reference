@@ -1,0 +1,6 @@
+@OpenIddict.Reference.APi_HostAddress = http://localhost:5072
+
+GET {{OpenIddict.Reference.APi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
