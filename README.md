@@ -1054,20 +1054,6 @@ The following services will be started:
 
 ---
 
-## Project Structure
-
-```bash
-src/
-
- ├── API
- ├── Application
- ├── Domain
- ├── Infrastructure
- └── Persistence
-`
-```
-
----
 
 ## Features
 
@@ -1085,6 +1071,7 @@ src/
 - OpenIddict 7.x
 
 ---
+
 
 ## Technologies
 
