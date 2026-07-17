@@ -1,10 +1,31 @@
-![Clean Architecture](https://img.shields.io/badge/Architecture-Clean-blueviolet?style=for-the-badge)
-![OAuth2](https://img.shields.io/badge/OAuth2-Authorization_Server-success?style=for-the-badge)
-![OIDC](https://img.shields.io/badge/OpenID-Connect-orange?style=for-the-badge)
+
+![.NET](https://img.shields.io/badge/.NET-10.0-purple)
+
+![C#](https://img.shields.io/badge/C%23-13-blue)
+
+![OpenIddict](https://img.shields.io/badge/OpenIddict-7.x-green)
+
+![OAuth2.1](https://img.shields.io/badge/OAuth-2.1-red)
+
+![OpenID Connect](https://img.shields.io/badge/OpenID%20Connect-OIDC-orange)
+
+![Docker](https://img.shields.io/badge/Docker-Enabled-2496ED?logo=docker&logoColor=white)
+
+![SQL Server](https://img.shields.io/badge/SQL%20Server-2022-red)
+
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
+![GitHub release](https://img.shields.io/github/v/release/milad6117/OpenIddict-Reference)
+
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/milad6117/OpenIddict-Reference/dotnet.yml)
+
+![Docker Workflow](https://img.shields.io/github/actions/workflow/status/milad6117/OpenIddict-Reference/docker.yml)
 ![Reference Tokens](https://img.shields.io/badge/Tokens-Reference-success?style=for-the-badge)
 ![Refresh Tokens](https://img.shields.io/badge/Refresh-Tokens-blue?style=for-the-badge)
 ![Token Introspection](https://img.shields.io/badge/Token-Introspection-red?style=for-the-badge)
 ![Token Revocation](https://img.shields.io/badge/Token-Revocation-important?style=for-the-badge)
+![Clean Architecture](https://img.shields.io/badge/Architecture-Clean-blueviolet?style=for-the-badge)
+
 
 # OpenIddict Reference Authorization Server
 
@@ -99,7 +120,7 @@ This project is built on top of modern Microsoft technologies and follows curren
 ---
 
 # Architecture
-
+```bash
 The solution follows a layered architecture where responsibilities are clearly separated.
 
                 +-------------------------+
@@ -132,6 +153,8 @@ The solution follows a layered architecture where responsibilities are clearly s
              +-------v-------+
              | SQL Server    |
              +---------------+
+
+ ```            
 ---
 
 # High-Level Components
