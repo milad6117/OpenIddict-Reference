@@ -20,10 +20,15 @@
 ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/milad6117/OpenIddict-Reference/dotnet.yml)
 
 ![Docker Workflow](https://img.shields.io/github/actions/workflow/status/milad6117/OpenIddict-Reference/docker.yml)
+
 ![Reference Tokens](https://img.shields.io/badge/Tokens-Reference-success?style=for-the-badge)
+
 ![Refresh Tokens](https://img.shields.io/badge/Refresh-Tokens-blue?style=for-the-badge)
+
 ![Token Introspection](https://img.shields.io/badge/Token-Introspection-red?style=for-the-badge)
+
 ![Token Revocation](https://img.shields.io/badge/Token-Revocation-important?style=for-the-badge)
+
 ![Clean Architecture](https://img.shields.io/badge/Architecture-Clean-blueviolet?style=for-the-badge)
 
 
@@ -567,6 +572,7 @@ Reference Tokens are validated using the Introspection Endpoint.
 | Identity Token | ✅ |
 | Reference Token | ✅ |
 
+---
 
 # API Documentation
 
@@ -901,9 +907,9 @@ Before running the project make sure the following software is installed.
 ---
 
 ## Clone Repository
-
-git clone https://github.com/YOUR_USERNAME/OpenIddict.Reference.git
 ```bash
+git clone https://github.com/milad6117/OpenIddict.Reference.git
+
 cd OpenIddict.Reference
 
 ---
@@ -973,6 +979,31 @@ Recommended for
 
 ---
 
+# Configuration
+
+The application configuration is stored in appsettings.json and can be overridden using environment variables.
+
+### Example
+
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=.;Database=OpenIddictReference;Trusted_Connection=True;TrustServerCertificate=True;"
+  },
+
+  "Authentication": {
+    "Issuer": "https://localhost:5005",
+    "Audience": "resource_server"
+  }
+}
+### Docker Environment Variables
+
+SQL_DATABASE=OpenIddictReference
+SQL_PASSWORD=YourStrong@Passw0rd
+ASPNETCORE_ENVIRONMENT=Development
+> When running with Docker Compose, the connection string is automatically overridden using environment variables.
+
+---
+
 ## Docker
 
 Build Image
@@ -1020,8 +1051,14 @@ services:
 
 Run
 
-bash
-docker compose up -d
+
+Run the complete Authorization Server using Docker Compose.
+
+docker compose up --build
+The following services will be started:
+
+- SQL Server 2022
+- OpenIddict Authorization Server
 
 ---
 
@@ -1034,8 +1071,7 @@ src/
  ├── Application
  ├── Domain
  ├── Infrastructure
- ├── Persistence
- └── Shared
+ └── Persistence
 `
 
 ---
@@ -1075,3 +1111,40 @@ src/
 ## License
 
 This project is released under the MIT License.
+
+---
+
+# Roadmap
+
+Future improvements planned for this project:
+
+- ✅ Authorization Code Flow + PKCE
+- ✅ Client Credentials Flow
+- ✅ Refresh Token Flow
+- ✅ Reference Access Tokens
+- ✅ Token Revocation
+- ✅ Token Introspection
+- ✅ Docker Support
+- ✅ Docker Compose
+- ✅ GitHub Actions CI
+- ✅ GitHub Container Registry (GHCR)
+
+Possible future enhancements:
+
+- OAuth Device Authorization Flow
+- Dynamic Client Registration
+- Federation Support
+- Integration Tests
+- Rate Limiting
+- API Versioning
+
+---
+
+# Author
+
+Milad Lotfi
+
+Backend Engineer specializing in ASP.NET Core, Distributed Systems, Microservices, OAuth 2.1, OpenID Connect, and Clean Architecture.
+
+- GitHub: https://github.com/milad6117
+- LinkedIn: https://www.linkedin.com/in/milad-lotfi-689ab5411
