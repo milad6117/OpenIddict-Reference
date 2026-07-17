@@ -1,35 +1,25 @@
 
 ![.NET](https://img.shields.io/badge/.NET-10.0-purple)
-
 ![C#](https://img.shields.io/badge/C%23-13-blue)
-
+![.NET CI](https://img.shields.io/badge/.NET_CI-Passing-success?style=flat)
+![Docker_CI](https://img.shields.io/badge/Docker_CI-Passing-success?style=flat)
 ![OpenIddict](https://img.shields.io/badge/OpenIddict-7.x-green)
-
 ![OAuth2.1](https://img.shields.io/badge/OAuth-2.1-red)
-
 ![OpenID Connect](https://img.shields.io/badge/OpenID%20Connect-OIDC-orange)
-
+![Authorization Code](https://img.shields.io/badge/Authorization_Code-Supported-success?style=flat)
+![PKCE](https://img.shields.io/badge/PKCE-S256-success?style=flat)
 ![Docker](https://img.shields.io/badge/Docker-Enabled-2496ED?logo=docker&logoColor=white)
-
+![Client Credentials](https://img.shields.io/badge/Client_Credentials-Supported-success?style=flat)
 ![SQL Server](https://img.shields.io/badge/SQL%20Server-2022-red)
-
 ![License](https://img.shields.io/badge/License-MIT-yellow)
-
 ![GitHub release](https://img.shields.io/github/v/release/milad6117/OpenIddict-Reference)
-
 ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/milad6117/OpenIddict-Reference/dotnet.yml)
-
 ![Docker Workflow](https://img.shields.io/github/actions/workflow/status/milad6117/OpenIddict-Reference/docker.yml)
-
-![Reference Tokens](https://img.shields.io/badge/Tokens-Reference-success?style=for-the-badge)
-
-![Refresh Tokens](https://img.shields.io/badge/Refresh-Tokens-blue?style=for-the-badge)
-
-![Token Introspection](https://img.shields.io/badge/Token-Introspection-red?style=for-the-badge)
-
-![Token Revocation](https://img.shields.io/badge/Token-Revocation-important?style=for-the-badge)
-
-![Clean Architecture](https://img.shields.io/badge/Architecture-Clean-blueviolet?style=for-the-badge)
+![Reference Tokens](https://img.shields.io/badge/Tokens-Reference-success?style=flat)
+![Refresh Tokens](https://img.shields.io/badge/Refresh-Tokens-blue?style=flat)
+![Token Introspection](https://img.shields.io/badge/Token-Introspection-red?style=flat)
+![Token Revocation](https://img.shields.io/badge/Token-Revocation-important?style=flat)
+![Clean Architecture](https://img.shields.io/badge/Architecture-Clean-blueviolet?style=flat)
 
 
 # OpenIddict Reference Authorization Server
@@ -580,7 +570,7 @@ The Authorization Server exposes several OAuth 2.1 and OpenID Connect endpoints.
 
 Each endpoint implements a specific part of the authentication lifecycle.
 
----
+
 
 # Authorization Endpoint
 
@@ -891,6 +881,7 @@ The following scenarios have been verified:
 - ✅ Token Introspection
 - ✅ OpenID Connect UserInfo
 
+---
 
 # Getting Started
 
@@ -976,6 +967,7 @@ Recommended for
 - Microservices
 - Background Workers
 - Machine-to-Machine Communication
+```
 
 ---
 
