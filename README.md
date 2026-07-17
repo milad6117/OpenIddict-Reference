@@ -1056,7 +1056,7 @@ The following services will be started:
 
 ## Project Structure
 
-text
+```bash
 src/
 
  ├── API
@@ -1065,6 +1065,7 @@ src/
  ├── Infrastructure
  └── Persistence
 `
+```
 
 ---
 
